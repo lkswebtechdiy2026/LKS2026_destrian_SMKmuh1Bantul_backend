@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApplicantController;
+use Spatie\Permission\Models\Role;
 
 Route::view('/', 'welcome')->name('home');
 
@@ -20,7 +21,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::post('/applicant', [ApplicantController::class, 'index'])->name('applicant.index');
     Route::view('applicant.', 'applicant.index')->name('applicant');
-    Route::post('/applicant/create', [ApplicantController::class, 'create'])->name('applicant.create');
+    Route::get('/applicant/create', [ApplicantController::class, 'create'])->name('applicant.create');
 });
 
 

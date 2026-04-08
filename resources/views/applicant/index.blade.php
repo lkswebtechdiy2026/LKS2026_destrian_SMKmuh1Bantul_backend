@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-span-4">
                     <div class="flex justify-end">
-                        <a href="{{route('applicant.create')}}">
+                        <a href="{{ route('applicant.create') }}">
                             <flux:button variant="primary">Tambah Pengajuan</flux:button>
                         </a>
                     </div>
@@ -36,21 +36,24 @@
                 <flux:table.column>Jumlah Karyawan</flux:table.column>
                 <flux:table.column>Jumlah Usaha</flux:table.column>
                 <flux:table.column>Pinjaman</flux:table.column>
+                <flux:table.column></flux:table.column>
             </flux:table.columns>
 
-            @foreanch 
             <flux:table.rows>
                 <flux:table.row>
-                    <flux:table.cell>{{$applicant->namausaha}}</flux:table.cell>
-                    <flux:table.cell>{{$applicant->nib}}</flux:table.cell>
-                    <flux:table.cell>{{$applicant->npwp}}</flux:table.cell>
-                    <flux:table.cell>{{$applicant->omset}}</flux:table.cell>
-                    <flux:table.cell>{{$applicant->jumlahkaryawan}}</flux:table.cell>
-                    <flux:table.cell>{{$applicant->jumlahusaha}}</flux:table.cell>
+                    <flux:table.column>Usaha Berkah</flux:table.column>
+                    <flux:table.column>47367428</flux:table.column>
+                    <flux:table.column>7849327894279</flux:table.column>
+                    <flux:table.column>1000000</flux:table.column>
+                    <flux:table.column>118</flux:table.column>
+                    <flux:table.column>18</flux:table.column>
+                    <flux:table.column>19000000</flux:table.column>
+                    <flux:table.cell>
+                        <flux:button variant="primary">Edit</flux:button>
+                        <flux:button variant="danger">Hapus</flux:button>
+                    </flux:table.cell>
                 </flux:table.row>
             </flux:table.rows>
-            @endforeanch
         </flux:table>
-
         </div>
 </x-layouts::app>

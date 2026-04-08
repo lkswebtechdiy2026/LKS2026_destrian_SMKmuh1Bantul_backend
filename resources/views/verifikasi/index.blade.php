@@ -14,7 +14,7 @@
             <div class="grid grid-cols-8 gap-4 mb-4 p-5">
                 <div class="col-span-4 mt-2">
                     <h1 class="text-3xl font-bold">
-                        Daftar Pengajuan
+                        Daftar Verifikasi
                     </h1>
                     <p>Daftar pengajuan yang belum di verifikasi</p>
                 </div>
@@ -24,22 +24,18 @@
         <flux:table>
             <flux:table.columns>
                 <flux:table.column>Nama Usaha</flux:table.column>
-                <flux:table.column>NIB</flux:table.column>
-                <flux:table.column>NPWP</flux:table.column>
-                <flux:table.column>Omset/bulan</flux:table.column>
                 <flux:table.column>Jumlah Karyawan</flux:table.column>
                 <flux:table.column>Jumlah Usaha</flux:table.column>
+                <flux:table.column>pinjaman</flux:table.column>
                 <flux:table.column></flux:table.column>
             </flux:table.columns>
 
             <flux:table.rows>
                 <flux:table.row>
                     <flux:table.cell>Lindsey Aminoff</flux:table.cell>
-                    <flux:table.cell>637362826383</flux:table.cell>
-                    <flux:table.cell>8904328083423231</flux:table.cell>
-                    <flux:table.cell>100000000</flux:table.cell>
                     <flux:table.cell>71</flux:table.cell>
                     <flux:table.cell>18</flux:table.cell>
+                    <flux:table.cell>10000000K0</flux:table.cell>
                     <flux:table.cell>
                         <flux:button variant="primary">Verif</flux:button>
                         <flux:button variant="danger">Tolak</flux:button>
@@ -47,6 +43,5 @@
                 </flux:table.row>
             </flux:table.rows>
         </flux:table>
-
         </div>
 </x-layouts::app>

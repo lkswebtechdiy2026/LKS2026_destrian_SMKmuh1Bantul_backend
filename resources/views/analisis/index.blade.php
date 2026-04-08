@@ -14,7 +14,7 @@
             <div class="grid grid-cols-8 gap-4 mb-4 p-5">
                 <div class="col-span-4 mt-2">
                     <h1 class="text-3xl font-bold">
-                        Daftar Pengajuan
+                        Daftar analisis
                     </h1>
                     <p>daftar pengajuan yang telah di verifikasi</p>
                 </div>
@@ -24,24 +24,26 @@
         <flux:table>
             <flux:table.columns>
                 <flux:table.column>Nama Usaha</flux:table.column>
+                <flux:table.column>NIB</flux:table.column>
+                <flux:table.column>NPWP</flux:table.column>
                 <flux:table.column>Omset/bulan</flux:table.column>
                 <flux:table.column>Jumlah Karyawan</flux:table.column>
                 <flux:table.column>Jumlah Usaha</flux:table.column>
-                <flux:table.column>Status</flux:table.column>
+                <flux:table.column>Pinjaman</flux:table.column>
                 <flux:table.column></flux:table.column>
             </flux:table.columns>
 
             <flux:table.rows>
                 <flux:table.row>
-                    <flux:table.cell>Lindsey Aminoff</flux:table.cell>
-                    <flux:table.cell>100000000</flux:table.cell>
-                    <flux:table.cell>71</flux:table.cell>
-                    <flux:table.cell>18</flux:table.cell>
+                    <flux:table.column>Usaha Berkah</flux:table.column>
+                    <flux:table.column>47367428</flux:table.column>
+                    <flux:table.column>7849327894279</flux:table.column>
+                    <flux:table.column>1000000</flux:table.column>
+                    <flux:table.column>118</flux:table.column>
+                    <flux:table.column>18</flux:table.column>
+                    <flux:table.column>19000000</flux:table.column>
                     <flux:table.cell>
-                        <flux:badge color="green" size="sm" inset="top bottom">Verif</flux:badge>
-                    </flux:table.cell>
-                    <flux:table.cell>
-                        <flux:button variant="primary">lanjut</flux:button>
+                        <flux:button variant="primary">Terima</flux:button>
                         <flux:button variant="danger">Tolak</flux:button>
                     </flux:table.cell>
                 </flux:table.row>

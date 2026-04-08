@@ -62,7 +62,7 @@ class ApplicantController extends Controller
      */
     public function edit(string $id)
     {
-        return view('appicant.edit', compact('applicant'));
+        return view('applicant.edit', compact('applicant'));
     }
 
     /**
@@ -84,7 +84,7 @@ class ApplicantController extends Controller
             'nib' => $request->nib,
             'npwp' => $request->npwp,
             'omset' => $request->omset,
-            'jumlahkarywan' => $request->jumlahkarywan,
+            'jumlahkaryawan' => $request->julahkaryawan,
             'jumlahusaha' => $request->jumlahusaha,
         ]);
     }
